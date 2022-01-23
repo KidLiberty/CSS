@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Custom Properties</title>
+    <style>
+      :root {
+        --primary-color: red;
+        --margin: 0;
+      }
+      h2 {
+        margin: var(--margin, 10px);
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.5rem;
+      }
+
+      p {
+        margin: var(--margin);
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Heading</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <button>Click Me</button>
+    <script>
+      const button = document.querySelector('button')
+      button.addEventListener('click', () => {
+        console.log(
+          getComputedStyle(document.documentElement).getPropertyValue(
+            '--primary-color'
+          )
+        )
+      })
+    </script>
+  </body>
+</html>
