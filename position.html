@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="position.css" />
+    <title>Position</title>
+    <style>
+      body {
+        height: 200vh;
+        margin: 0;
+      }
+      .parent {
+        padding: 0.25rem;
+        background-color: lightskyblue;
+        position: relative;
+        z-index: -2;
+      }
+      .child1 {
+        position: sticky;
+        z-index: -1;
+        top: 10px;
+        padding: 0.25rem;
+        background-color: lightcoral;
+      }
+      .child2 {
+        padding: 0.25rem;
+        background-color: lightgreen;
+      }
+      .child3 {
+        padding: 0.25rem;
+        background-color: peru;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Parent
+      <div class="child1">One</div>
+      <div class="child2">Two</div>
+      <div class="child3">Three</div>
+    </div>
+  </body>
+</html>

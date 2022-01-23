@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Float</title>
+    <link rel="stylesheet" href="flexBox.css" />
+    <style>
+      .item {
+        border: 1px solid #333;
+        background-color: #777;
+        width: 75px;
+        color: yellow;
+        margin: 10px;
+      }
+      /*
+      The only children modified are the DIRECT children!
+      Margins do NOT collapse!
+      */
+      .container {
+        display: flex;
+        background-color: #ccc;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+      }
+      .item1 {
+        min-height: 50px;
+      }
+      .item2 {
+        min-height: 100px;
+      }
+      .item3 {
+        min-height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+    </div>
+    <span>This is a span</span>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        background-color: azure;
+      }
+      .submit:hover {
+        background-color: aqua;
+        cursor: pointer;
+      }
+      .submit:focus {
+        background-color: blue;
+      }
+      .name:hover {
+        background-color: chartreuse;
+      }
+      .email:disabled {
+        background-color: brown;
+      }
+      .name:required {
+        background-color: darkturquoise;
+      }
+      span:first-child {
+        color: red;
+      }
+      span:last-child {
+        color: rgb(89, 20, 218);
+      }
+      /* Looks to parent container */
+      span:last-of-type {
+        color: rgb(117, 130, 0);
+      }
+      span:nth-child(3) {
+        color: lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label>Email</label>
+      <input type="text" class="email" disabled />
+    </div>
+    <div>
+      <label for="">My name is</label>
+      <input type="text" class="name" required />
+    </div>
+    <button type="submit" class="submit">Send</button>
+    <br />
+    <div>
+      <div></div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span
+        >4
+        <span>Not-last-of-type</span>
+        <span>Last-of-type</span>
+      </span>
+      <span>5</span>
+    </div>
+    <div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+    </div>
+  </body>
+</html>
