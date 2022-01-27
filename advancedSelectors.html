@@ -7,24 +7,29 @@
     <title>Advanced Selectors</title>
     <style>
       div > span {
+        background-color: green;
+      }
+      input[type='text'] {
         background-color: red;
       }
-      span {
-        background-color: green;
+      input[data-margin] {
+        margin: 50px;
       }
     </style>
   </head>
   <body>
+    <input data-margin type="checkbox" />
+    <input type="text" />
     <h2>Heading</h2>
-    <p>Paragraph 1</p>
-    <p>Paragraph 2</p>
+    <p class="red">Paragraph 1</p>
+    <p class="green">Paragraph 2</p>
     <div>
       <span>
         Outer Span
         <span>Inner Span</span>
       </span>
     </div>
-    <p>Paragraph 3</p>
+    <p class="red">Paragraph 3</p>
     <p>Paragraph 4</p>
     <div>Div 2</div>
     <p>Paragraph 5</p>
