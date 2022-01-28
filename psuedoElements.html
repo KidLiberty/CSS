@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo Elements</title>
+    <style>
+      .box {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+      }
+
+      p::first-letter {
+        font-size: 2rem;
+      }
+
+      p::first-line {
+        background-color: green;
+      }
+
+      .box::before {
+        content: 'Hello';
+      }
+
+      .box::after {
+        content: 'Goodbye';
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Heading</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quia
+      consectetur laboriosam quae fuga ipsa dolorum, nostrum amet odio, ea nobis
+      perspiciatis! Voluptatibus doloremque voluptatum quam temporibus, quaerat
+      consequuntur illum.
+    </p>
+    <div class="box">Middle</div>
+  </body>
+</html>
