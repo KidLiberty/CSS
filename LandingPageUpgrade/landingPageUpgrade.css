@@ -126,22 +126,6 @@ body {
 
 .section-accent {
   background-color: #0af;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.free-title {
-  color: white;
-  margin: 0;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-}
-
-.free-sub-title {
-  color: white;
-  max-width: 300px;
 }
 
 .form {
@@ -185,4 +169,35 @@ body {
 
 .btn-square {
   border-radius: 0.3em;
+}
+
+/* New content */
+.pricing-cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-card {
+  padding: 1rem;
+  background-color: #dcf4ff;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  margin: 1rem 0;
+}
+
+.pricing-card.accent {
+  background-color: white;
+  margin: 0;
+}
+
+.pricing-card:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.pricing-card:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
 }
