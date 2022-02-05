@@ -234,3 +234,44 @@ body {
 .feature:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 450px) {
+  .curriculum-grid {
+    grid-template-columns: minmax(auto, 450px);
+    row-gap: 30px;
+  }
+
+  .full-screen-header {
+    background-position-x: 65%;
+  }
+
+  .pricing-cards-container {
+    flex-wrap: wrap;
+  }
+
+  .pricing-card,
+  .pricing-card.accent {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-card:first-child {
+    border: 1px solid black;
+    border-radius: 0.3em;
+  }
+
+  .pricing-card:last-child {
+    border: 1px solid black;
+    border-radius: 0.3em;
+    margin-bottom: 0;
+  }
+
+  .feature {
+    text-align: center;
+  }
+
+  .feature.feature.inactive {
+    display: none;
+  }
+}
