@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .div {
+        background-color: red;
+
+        color: white;
+        animation-name: color-change, size-change, custom;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-timing-function: forwards;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+      }
+      .div:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes custom {
+        from {
+          font-size: 1rem;
+        }
+
+        25% {
+          font-size: 2rem;
+        }
+
+        50% {
+          font-size: 2.5rem;
+        }
+
+        75% {
+          font-size: 2rem;
+        }
+
+        to {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">Div</div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+  </body>
+</html>
